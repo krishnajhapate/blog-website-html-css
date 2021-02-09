@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation {
+    font-family: var(--font1);
+    margin-top: 25px!important;
+    margin-bottom: 10px!important;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.nav-left ul li a:hover {
+    font-weight: bolder;
+    color: var(--main-bg-color);
+}
+
+.nav-left ul {
+    display: flex;
+    font-family: var(--font2);
+    align-items: center;
+    margin: 0 77px;
+}
+
+.content {
+    /* background-color: rgb(211, 211, 211); */
+    height: 100%;
+    margin-top: 30px!important;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    background: url('/img/1.jpg');
+    opacity: .2;
+}
+
+.content-left {
+    font-family: var(--font1);
+    padding: 50px;
+    z-index: 1;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 355px;
+    border: .5px solid black;
+    border-radius: 50%;
+}
+
+.home-articles {
+    height: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    width: 234px;
+    height: auto;
+    /* background-color: brown; */
+    right: 0px;
+    font-size: 18px;
+    top: 100px;
+}
+
+.year-box div {
+    margin: 12px 0;
+}
+
+.year-box input[type="radio"] {
+    margin-right: 10px;
+}
+
+.home-article {
+    display: flex;
+    padding: 25px;
+}
+
+.home-article a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-article a:hover {
+    color: var(--main-bg-color);
+    text-decoration: underline;
+}
+
+.home-article img {
+    width: 300px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.footer,
+.footer a {
+    height: 30px;
+    background-color: var(--main-bg-color);
+    font-family: var(--font1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
